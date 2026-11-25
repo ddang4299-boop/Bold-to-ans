@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Dịch Thuật Cafe",
+  "version": "2.0.0",
+  "description": "Dịch các thuật ngữ Cafe",
+  "permissions": [
+    "storage",
+    "nativeMessaging"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Dịch Thuật Cafe"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmqXENOKOibhidZYQvSURcE2r4XjfRzMVg/n5YhDxCqd0ZMkEKOYEZjubbE+fSiyCAh2dh3diMqH03ZpcJEO+As6TIW4wH/aok68I9g5nmE04lFG4DMRwe14o9ShubBL9C8DUW18DrxzAw3+skDYD9VHrJtOqyzDD55bfOEbmQ8xzUVWD2AbKV7tVQjixQZ//BCImagdF8YObNuJPDVVMBiu1awQb6pZzHH6RxkmdHLj5sXNCcpKz8z++G4vz0tpCtkybBF8c37SCMZkhO9IuU+xRWAy3hh0wCM3ZbC37tHE4wrJP8A439ql2x44WO4TLzR6pk+Q5hFkgmJDwXsKwRQIDAQAB"
+}

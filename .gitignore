@@ -1,0 +1,5 @@
+# Nhật ký và trạng thái riêng của từng máy
+native-host/host.log
+native-host/mode.txt
+# File do install.bat tạo ra, chứa đường dẫn trên máy bạn
+native-host/com.moodle.quizhelper.json
